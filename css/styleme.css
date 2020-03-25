@@ -16,6 +16,9 @@ body {
 }
 
 
+p::first-letter {
+    font-size: 1.5rem;
+}
 
 h1 {
     font-size: 40px;
@@ -70,7 +73,9 @@ a:visited {
 #movie {
     text-align: inherit;
     line-height: 25px;
+    
 }
+
 
 dl {
     font-size: 13px;
