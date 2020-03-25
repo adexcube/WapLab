@@ -1,0 +1,108 @@
+body {
+    background-color: white;
+    color: #404040;
+    font-size: 11px;
+    font-family: Georgia,Garamond;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-size: 1024px;
+    background-image: url(../images/silverware.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    
+}
+
+a {
+    color: #A4A400;
+}
+
+
+#heading {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: Lucida Sans-Unicode, Helvetica, Arial;
+    text-align: left;
+    text-decoration: underline;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 15px;
+    
+    
+
+}
+
+.top {
+    text-align: center;
+}
+
+.piedata {
+    padding-top: 10px;
+    
+}
+
+.piedata ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.ingredentdata {
+    padding-top: 5px;
+    
+}
+
+.ingredentdata ul {
+    list-style-image: url(../images/pie_icon.gif);
+    
+}
+
+
+
+.directiondata {
+    margin-bottom: 12px;
+    
+}
+
+
+.directiondata ul {
+    list-style-type: circle;
+    list-style-image: url(../images/pie_icon.gif);
+
+    
+}
+
+
+.commentdata {
+    padding: 10px 50px 10px;
+       
+}
+
+.commentdatainner {
+    background-color: #FFFFA8;
+    font-style: italic;
+
+}
+
+#search { 
+    padding: 10px;
+   
+}
+
+.search text { 
+    color: #A4A400;
+}
+
+
+.searchreferer { 
+    color: #A4A400;
+    text-align: right;
+    
+}
+
+.searchcopyright { 
+    color: black;
+    text-align: right;
+}
+
+

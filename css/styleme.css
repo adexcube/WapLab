@@ -1,0 +1,83 @@
+body {
+    background-color: gray;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    
+}
+
+
+
+#wrapper {
+    background-color: gray;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+
+h1 {
+    font-size: 40px;
+    font-style: italic;
+    color: gold;
+}
+
+.main {
+    font-size: 25px;
+    font-style: italic;
+    color: gold;
+}
+
+h2  {
+    font-size: 30px;
+    font-style: normal;
+
+}
+
+a {
+    text-decoration: none;
+    color: gold;
+    target-new: tab;
+    
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#header {
+    background-color: black;
+    background-image:url(../images/backgd.jpg); 
+    
+    padding: 10px;
+    margin: 0px;
+    color: blanchedalmond;
+}
+
+#course {
+    text-align: inherit;
+    line-height: 25px;
+}
+
+#movie {
+    text-align: inherit;
+    line-height: 25px;
+}
+
+dl {
+    font-size: 13px;
+}
+
+dt {
+    color: gold;
+}
+
+
