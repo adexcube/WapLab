@@ -103,6 +103,7 @@ a {
 .searchcopyright { 
     color: black;
     text-align: right;
+    float: right;
 }
 
 
