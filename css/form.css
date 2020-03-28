@@ -1,0 +1,83 @@
+body {
+    background-color: inherit;
+    width: auto;
+    height: auto;
+
+}
+
+.container {
+    width: inherit;
+    height: 650px;
+    border: solid;
+    border-width: 10px;
+    border-color: lightcyan;
+    
+}
+
+.containerform {
+    width: inherit;
+    height: inherit;
+    border: 50px;
+    margin: 40px;
+    
+    
+
+}
+
+
+
+.containerform label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    border-top: 50px;
+    height: 500px;
+    padding-top: 30px;
+    text-align: left;
+    opacity: 0.5;
+
+}
+
+#email {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    border-radius: 8px;
+    width: 90%;
+    margin-right: 30px;
+    margin-top: 30px;
+    opacity: 0.3;
+    vertical-align: baseline;
+
+}
+
+#password {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    border-radius: 8px;
+    width: 90%;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    opacity: 0.3;
+    vertical-align: baseline;
+}
+
+
+#radio {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 15px;
+    opacity: 0.5;
+}
+
+
+#submit {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 15px;
+    background-color: navy;
+    color: white;
+    width: 130px;
+    height: 70px;
+    border-radius: 15px;
+}
+
