@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebForm for WAP Lab</title>
+ 
+
+
+    
+    
    
 </head>
 <body>
     <div class="container">
 
        <div class="containerform">
-            <form action="" method="POST">
+            <form name="myForm">
                 <label for="email">Email Address
                 <br>
                 <input type="text" id="email" name="email" value="Enter Email" />
@@ -21,25 +26,47 @@
                
                 <label for="password"> Password</label>
                 <br>
-                <input type="text" id="password" name="password" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" value="Password" pattern="(?=\d+)(?=[a-z]*)(?=[A-Z]*).{10,}" />
+                <input type="text" id="password" name="password" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" value="Password" pattern= "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" />
                 
                 <br>
                 <label for="text"> URL</label>
                 <br>
-                <input type="text" id="email" name="URL" value="URL" title="Please enter a URL" pattern="https?://.+" />
+                <input type="text" id="email1" name="URL" value="URL" title="Please enter a URL" pattern="https?://.+" />
                 
                 <br>
                 <div id="radio">
-                <input type="radio" id="radio" name="Check" value="logout"/> 
+                <input type="radio" id="radio" name="Check" value="logout"> 
                 Check me out 
                 </div>
-                <input type="submit"id="submit">
+
+                <input type="button" id="submit" name="Submit" value="submit" onclick="showMessage()">
+               
+                <div id="display"></div>
             </form>
+
 
 
        </div>
     </div>
+    <script type="text/javascript"> 
+    
+        function showMessage() {
+          let email =   document.getElementById("email").value;
+           let pass =  document.getElementById("password").value;
+       document.getElementById("display").innerHTML = document.writeln("Your email address is:  " + email + " and your password is: " + pass);
+        
 
+
+
+
+       }
+    
+    
+      
+    </script>
 
 </body>
 </html>
+
+
+

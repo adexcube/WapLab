@@ -51,6 +51,19 @@ body {
 
 }
 
+#email1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    border-radius: 8px;
+    width: 90%;
+    margin-right: 30px;
+    margin-top: 30px;
+    opacity: 0.3;
+    vertical-align: baseline;
+    
+
+}
+
 #password {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
