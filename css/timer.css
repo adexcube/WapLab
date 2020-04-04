@@ -1,0 +1,40 @@
+body { 
+    width: auto;
+    height: auto;
+
+
+}
+
+
+
+#timebody {
+    width: 200px;
+    margin: auto;
+    height: 200px;
+}
+
+
+
+
+#submit {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: B2BEB5;
+    width: 200px;
+    height: 100px;
+    border-radius: 5px;
+    margin-top: 100px;
+}
+
+
+#showtime {
+    width: 200px;
+    margin: auto;
+    margin-top: 100px;
+    height: 200px;
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
