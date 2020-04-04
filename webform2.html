@@ -39,19 +39,19 @@
         <form action="" method="post">
             <label for="stock" class="formright"> Quantity in Stock <br>
 
-                <input type="text" name="Name" class="formrighttext" value="0" />
+                <input type="text" name="quantity" id="stock" class="formrighttext" value="0" />
             </label>
             
         <label for="prodnum" class="formleft"> Enter Product Number <br>
 
-        <input type="text" value="" name="prodnum" class="formlefttext" />
+        <input type="text" value="" name="prodnum" id="prod" class="formlefttext" />
     </label>
     
    
 
     <label for="name" class="formright"> Supplier: <br>
 
-        <select name="supplier" class="formrighttext">
+        <select name="supplier" class="formrighttext" id="supplier">
             <option selected> Select a supplier</option>
             <option value="Food Supplier"> Food Supplier</option>
             <option value="Clothe Supplier"> Clothe Supplier</option>
@@ -60,26 +60,28 @@
 
     <label for="name" class="formleft"> Name <br>
 
-        <input type="text" value="" name="name" class="formlefttext" />
+        <input type="text" value="" name="name" class="formlefttext" id="name" />
     </label>
 
     <label for="date" class="formright"> Date Supplied <br>
 
-        <input type="text" name="date" class="formrighttext" value="yyyy-mm-dd"/>
-        <p>Enter a valid Date.</p>
+        <input type="text" name="date" class="formrighttext" value="yyyy-mm-dd" id="date"/>
+        
     </label>
 
     <label for="price" class="formleft"> Unit Price<br>
 
-        <input type="text" value="0.0" name="price" class="formlefttext" />
+        <input type="text" value="0.0" name="price" id="price" class="formlefttext" />
     </label>
 
    
 
     <div class="formright">
-        <input type="submit" name="Add Product" class="addproduct" value="Add Product" />
+        <input type="submit" name="AddProduct" class="addproduct" value="Add Product" onclick="showMessage(); return false" />
         <input type="submit" name="Cancel" class="cancel" value="Cancel" />
         <input type="submit" name="Reset" class="reset" value="Reset" />
+        <!-- <input type="button" id="submit" name="Submit" value="submit" onclick="showMessage()">  -->
+
         
 
     </div>
@@ -90,7 +92,21 @@
 
     </form>
     </div>
+    <script type="text/javascript">
 
+
+        function showMessage() {
+            let quantity = document.getElementById("stock").value;
+            let prodnum = document.getElementById("prod").value;
+           const supplier = document.getElementById("supplier").value;
+            const name = document.getElementById("name").value;
+            const date = document.getElementById("date").value;
+            const price = document.getElementById("price").value;
+
+          alert ("Product Name: " + name + "\n" + "Product Number: " + prodnum + "\n" + "Quantity: " + quantity + "\n" + "Supplier: " + supplier + "\n" + "Price: " + price + "\n" + "Date: " + date);
+          //  alert(prodnum);
+        }
+    </script>
 
 </body>
 </html>

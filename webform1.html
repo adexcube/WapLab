@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebForm for WAP Lab</title>
- 
+    <script src="js/webform.js"></script>
 
 
     
@@ -40,31 +40,32 @@
                 </div>
 
                 <input type="button" id="submit" name="Submit" value="submit" onclick="showMessage()">
-               
-                <div id="display"></div>
             </form>
+
+               
+            
 
 
 
        </div>
     </div>
-    <script type="text/javascript"> 
+
+   
     
+         <p><span id="display"></span></p>
+
+
+    <script type="text/javascript">
+
         function showMessage() {
-          let email =   document.getElementById("email").value;
-           let pass =  document.getElementById("password").value;
-       document.getElementById("display").innerHTML = document.writeln("Your email address is:  " + email + " and your password is: " + pass);
-        
+            let email =   document.getElementById("email").value;
+             let pass =  document.getElementById("password").value;
+         document.getElementById("display").innerHTML = ("Your email address is:  " + email + " and your password is: " + pass);
+          
+         }
 
 
-
-
-       }
-    
-    
-      
-    </script>
-
+        </script>
 </body>
 </html>
 
