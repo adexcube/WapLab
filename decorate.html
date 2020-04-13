@@ -1,67 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/decorate.css">
-    <title>Document</title>
+    <title>Text Decorator</title>
+    <link href="w1d6.css" rel="stylesheet" type="text/css" />    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>   
+
 </head>
+
 <body>
-    <div id="header">
-        <div class="rightfooter">
-          Drawing:
-          <input type="radio" value="">
-          <input type="button" value="clear">
-            </div>
+    <h1>Text Decorator</h1>
 
-    </div>
-
-    <div id="mid">
-        <h1>Maharishi University of Management, CS472</h1>
-        <div class="smallmid">Lab 6: Decorate My Text</div>
-
-        <div class="content">
-            Except where otherwise noted, the contents of this document are Copyright 2012 Marty Stepp, 
-            Jessica Miller, and Victoria Kirst. All rights reserved. Any redistribution, reproduction, 
-            transmission, or storage of part or all of the contents in any form is prohibited without the 
-            author's expressed written permission.
-        </div>
-
-        <div class="content2">
-            original lab idea and code by Victoria Kirst and Jeff Prouty; revised by Brian Le, Katlyn
-            Edwards, Roy McElmurry IV, and Marty Stepp
-        </div>
-    
-        <div class="holdlink">
-            
-                <a href="https://validator.w3.org/check/referer"> 
-                    <img src="./images/w3c-html.png" alt="html validator"/></a>
-            
-                    <a href="https://jigsaw.w3.org/css-validator/check/referer"> 
-                        <img src="./images//w3c-css.png" alt="css validator"/></a>
-
-                        <a href="https://mumstudents.org/jshint/referer.php"> 
-                            <img src="./images//w3c-js.png" alt="css validator"/></a>
-
-        </div>
+    <div>
+        <img alt="very decorated!" src="http://mumstudents.org/cs472/2016-03-AS-KL/Labs/6/decorated.gif"/>
     </div>
     
+    <fieldset>
+        <legend>Text</legend>
+        <textarea cols="30" id="textarea" placeholder="Type Your Text Here ..." rows="4"></textarea>
+    </fieldset>
 
-    <div id="footer">
-
-        
-       
-
-        <div class="rightfooter">
-            Ø   «   » 
-            </div>
-
-            <div class="leftfooter">
-                Maharishi University of Management, CS472 <br>
-                 Lab 6: Decorate My Text
-                 
-                 </div>
-
+    <fieldset>
+        <legend>Decoration</legend>
+        <input onclick="interval()" type="button" value="Bigger Decorations!" /> <br /> <br />
+        <input id="bling" onchange="boldText()" type="checkbox" value="bling" /> Bling
+        <input onclick="pig()" type="button" value="Igpay Atinlay" />
+        <input onclick="markov()" type="button" value="Malkovich" />
+    </fieldset>
+    
+    <div id="w3c">
+        <a href="https://validator.w3.org/check/referer">
+            <img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="html validator"
+                style="padding-top: 1rem;" />
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img src="http://mumstudents.org/cs472/2013-09/images/w3c-css.png" alt="html validator"
+                style="padding-top: 1rem;" />
+        </a>
+        <a href="https://webster.cs.washington.edu/jslint/referer"><img
+                src="http://mumstudents.org/jshint/jshint-small.png" alt="Valid JS" /></a>
     </div>
+
+    <script src="w1d6.js"></script>
 </body>
-</html>
+
+</html
