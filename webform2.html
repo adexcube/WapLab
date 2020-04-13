@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebForm2 for WAP LAP</title>
     <link rel="stylesheet" href="./css/form.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     <div id="banner">
@@ -39,7 +40,7 @@
         <form action="" method="post">
             <label for="stock" class="formright"> Quantity in Stock <br>
 
-                <input type="text" name="quantity" id="stock" class="formrighttext" value="0" />
+                <input type="text" name="quantity" id="stock" class="formrighttext" value="" placeholder="0" />
             </label>
             
         <label for="prodnum" class="formleft"> Enter Product Number <br>
@@ -65,13 +66,13 @@
 
     <label for="date" class="formright"> Date Supplied <br>
 
-        <input type="text" name="date" class="formrighttext" value="yyyy-mm-dd" id="date"/>
+        <input type="text" name="date" class="formrighttext" value="" id="date" placeholder="yyyy-mm-dd"/>
         
     </label>
 
     <label for="price" class="formleft"> Unit Price<br>
 
-        <input type="text" value="0.0" name="price" id="price" class="formlefttext" />
+        <input type="text" value="" name="price" id="price" class="formlefttext" placeholder="0.0" />
     </label>
 
    
@@ -80,7 +81,7 @@
         <input type="submit" name="AddProduct" class="addproduct" value="Add Product" onclick="showMessage(); return false" />
         <input type="submit" name="Cancel" class="cancel" value="Cancel" />
         <input type="submit" name="Reset" class="reset" value="Reset" />
-        <!-- <input type="button" id="submit" name="Submit" value="submit" onclick="showMessage()">  -->
+
 
         
 
@@ -91,23 +92,44 @@
 
 
     </form>
+
+    <div id="displayformdetails">
+      
+        <p></p>
+
     </div>
+
+
+    </div>
+    <br>
+    <br>
     <script type="text/javascript">
 
 
         function showMessage() {
-            let quantity = document.getElementById("stock").value;
-            let prodnum = document.getElementById("prod").value;
-           const supplier = document.getElementById("supplier").value;
-            const name = document.getElementById("name").value;
-            const date = document.getElementById("date").value;
-            const price = document.getElementById("price").value;
+            let quantity = $("#stock").val();
+            let prodnum = $("#prod").val();
+           const supplier = $("#supplier").val();
+            const name = $("#name").val();
+            const date = $("#date").val();
+            const price = $("#price").val();
+            
 
           alert ("Product Name: " + name + "\n" + "Product Number: " + prodnum + "\n" + "Quantity: " + quantity + "\n" + "Supplier: " + supplier + "\n" + "Price: " + price + "\n" + "Date: " + date);
           //  alert(prodnum);
+
+          $("#displayformdetails").html("Product Name: " + name + "\n" + "Product Number: " + prodnum + "\n" + "Quantity: " + quantity + "\n" + "Supplier: " + supplier + "\n" + "Price: " + price + "\n" + "Date: " + date);
         }
     </script>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
 
