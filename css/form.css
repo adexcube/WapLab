@@ -291,3 +291,20 @@ body {
 
 }
 
+
+
+#displayformdetails {
+
+        float: left;
+        opacity: 0.5;
+        font-size: 15px;
+        height: auto;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        width: 100%;
+        clear: both;
+      
+    }
+
